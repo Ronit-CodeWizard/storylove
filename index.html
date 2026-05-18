@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is That A Sign From God? by Ronit Kumar Majhi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Minimalist Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>EBOOK</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#author" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>Author</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="book-cover">
+                    <img src="./images/cover.jpg" alt="Book Cover">
+                    <div class="cover-overlay"></div>
+                </div>
+                
+                <div class="book-info">
+                    <div class="genre-tag">
+                        <i class="fas fa-heart"></i>
+                        <span>Romance · Coming of Age</span>
+                    </div>
+                    
+                    <h1 class="book-title">Is That A Sign<br>From God?</h1>
+                    
+                    <p class="tagline">
+                        <i class="fas fa-quote-left"></i>
+                        Sometimes, love doesn't end - it just pauses forever.
+                        <i class="fas fa-quote-right"></i>
+                    </p>
+                    
+                    <div class="author-info">
+                        <i class="fas fa-pen-fancy"></i>
+                        <span>by Ronit Kumar Majhi</span>
+                    </div>
+                    
+                    <div class="book-stats">
+                        <div class="stat">
+                            <i class="fas fa-book-reader"></i>
+                            <span>Non-Fiction</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-clock"></i>
+                            <span>~30 min read</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-language"></i>
+                            <span>English</span>
+                        </div>
+                    </div>
+                    
+                    <button class="cta-button" onclick="showPasswordLock()">
+                        <i class="fas fa-book-open"></i>
+                        <span>Start Reading</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="section-header">
+                <i class="fas fa-align-left"></i>
+                <h2>About This Story</h2>
+            </div>
+            <div class="about-content">
+                <p>On his third day at a new school, Ronit wasn't expecting anything more than another dull morning. But one smile - a simple, radiant smile - changed everything. Someone walked into his life like a quiet prayer, soft yet unforgettable. From glances across the classroom to late-night chats that meant more than words, their story began to feel like destiny.</p>
+                <p>But destiny, as he soon learns, has its own cruel timing. Between school rules, distance, and unspoken emotions, their bond is tested - until silence becomes the only answer left.</p>
+                <p class="highlight-text">
+                    <i class="fas fa-star"></i>
+                    Was she really sent by God... or was she just a sign that some loves are meant to remain unfinished?
+                </p>
+            </div>
+            
+            <div class="tags-container">
+                <div class="tag"><i class="fas fa-tag"></i> Young Adult</div>
+                <div class="tag"><i class="fas fa-tag"></i> Drama</div>
+                <div class="tag"><i class="fas fa-tag"></i> Emotional</div>
+                <div class="tag"><i class="fas fa-tag"></i> Life Lessons</div>
+                <div class="tag"><i class="fas fa-tag"></i> Slice of Life</div>
+                <div class="tag"><i class="fas fa-tag"></i> Heartwarming</div>
+                <div class="tag"><i class="fas fa-tag"></i> Friendship</div>
+            </div>
+        </section>
+
+        <!-- Author Section -->
+        <section class="author-section" id="author">
+            <div class="section-header">
+                <i class="fas fa-user-edit"></i>
+                <h2>About The Author</h2>
+            </div>
+            <div class="author-card">
+                <div class="author-avatar">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="author-details">
+                    <h3>Ronit Kumar Majhi</h3>
+                    <p class="author-bio">A storyteller capturing the raw emotions of young love, faith, and the beautiful mistakes we make along the way.</p>
+                    <div class="author-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Password Lock Modal -->
+    <div class="password-modal" id="passwordLock">
+        <div class="modal-overlay" onclick="hidePasswordLock()"></div>
+        <div class="modal-content">
+            <button class="close-btn" onclick="hidePasswordLock()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="lock-header">
+                <div class="lock-icon">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <h2>Protected Content</h2>
+                <p>Enter your 4-digit PIN to unlock the story</p>
+            </div>
+            
+            <div class="pin-inputs">
+                <input type="password" maxlength="1" class="pin-box" id="pin1" />
+                <input type="password" maxlength="1" class="pin-box" id="pin2" />
+                <input type="password" maxlength="1" class="pin-box" id="pin3" />
+                <input type="password" maxlength="1" class="pin-box" id="pin4" />
+            </div>
+            
+            <button class="unlock-button" onclick="verifyPin()">
+                <i class="fas fa-unlock"></i>
+                <span>Unlock Story</span>
+            </button>
+            
+            <div class="error-msg" id="errorMessage"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <i class="fas fa-book"></i>
+                <p>© 2026 Is That A Sign From God?</p>
+            </div>
+            <div class="footer-section">
+                <a href="#"><i class="fas fa-shield-alt"></i> Privacy</a>
+                <a href="#"><i class="fas fa-file-contract"></i> Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
