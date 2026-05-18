@@ -62,18 +62,14 @@
     </article>
 
     <!-- Floating Actions -->
-    <div class="floating-actions">
-        <button class="action-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        <button class="action-btn" onclick="adjustFontSize('increase')">
-            <i class="fas fa-plus"></i>
-        </button>
-        <button class="action-btn" onclick="adjustFontSize('decrease')">
-            <i class="fas fa-minus"></i>
-        </button>
-    </div>
-
+<div class="floating-actions">
+    <button class="action-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Scroll to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <button class="action-btn" onclick="window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})" title="Scroll to Bottom">
+        <i class="fas fa-arrow-down"></i>
+    </button>
+</div>
     <script src="../js/auth.js"></script>
     <script src="content.js"></script>
 </body>
